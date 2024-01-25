@@ -5,8 +5,6 @@ import "./interfaces/IAccessManager.sol";
 import "./dao/interfaces/IDAO.sol";
 import "./SigningTools.sol";
 
-// test
-
 // A simple AccessManager in which user IP is mapped offchain to a geolocation and then whitelisted user status is stored in the contract.
 // If geographic regions are later excluded, users are required to reverify (allowing avoiding storing countries for specific wallets and potentially violating user privacy).
 // The AccessManager restricts users from adding liquidity, adding collateral and borrowing USDS on the contract level - but always allows existing assets to be removed (in case a user's region is restricted after depositing assets).
